@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8728AAD-6A88-49DA-A099-D3FBC1041385}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.25\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="academic_performanceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>academic_performanceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class2.cs" />
+    <Compile Include="Db.cs" />
+    <Compile Include="StudentDeleate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentDeleate.Designer.cs">
+      <DependentUpon>StudentDeleate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentGrades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>AddStudentGrades.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersDeleate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersDeleate.Designer.cs">
+      <DependentUpon>TeachersDeleate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTeachers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeachers.Designer.cs">
+      <DependentUpon>AddTeachers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectInfo.Designer.cs">
+      <DependentUpon>SubjectInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeachersInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeachersInfo.Designer.cs">
+      <DependentUpon>TeachersInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradesInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradesInfo.Designer.cs">
+      <DependentUpon>GradesInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsInfo.Designer.cs">
+      <DependentUpon>StudentsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudents.Designer.cs">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjects.Designer.cs">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectsDeleate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectsDeleate.Designer.cs">
+      <DependentUpon>SubjectsDeleate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="StudentDeleate.resx">
+      <DependentUpon>StudentDeleate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentGrades.resx">
+      <DependentUpon>AddStudentGrades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersDeleate.resx">
+      <DependentUpon>TeachersDeleate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTeachers.resx">
+      <DependentUpon>AddTeachers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectInfo.resx">
+      <DependentUpon>SubjectInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeachersInfo.resx">
+      <DependentUpon>TeachersInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradesInfo.resx">
+      <DependentUpon>GradesInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsInfo.resx">
+      <DependentUpon>StudentsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudents.resx">
+      <DependentUpon>AddStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubjects.resx">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectsDeleate.resx">
+      <DependentUpon>SubjectsDeleate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="academic_performanceDataSet.xsc">
+      <DependentUpon>academic_performanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="academic_performanceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>academic_performanceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="academic_performanceDataSet.xss">
+      <DependentUpon>academic_performanceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\book.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\hat.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\teacher.png" />
+    <None Include="Resources\1517572511_bg-svg-gradient-min.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
